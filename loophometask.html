@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>1-dən N-ə qədər olan ədədlərin cəmini tapın</h1>
+    <label for="">
+        Ədədi daxil edin:
+        <input type="number" id="n">
+    </label>
+    <button onclick="hesabla()">Cəmi Hesabla</button>
+    <p id="result1"></p>
+    <h1>Tək ədədlər</h1>
+    <p id="result2"></p>
+    <h1>Cüt ədədlər</h1>
+    <p id="result3"></p>
+    <script>
+const  a=document.getElementById('a')
+const result1=document.getElementById('result1')
+const result2=document.getElementById('result2')
+const result3=document.getElementById('result3')
+function hesabla(){
+    let cem=0;
+    let kod=''
+    let kod1=''
+    for(let i=1;i<=n.value;i++){
+cem+=i
+if(i%2==0){kod+=i+" "}
+else kod1+=i+" "
+    }
+    result1.innerHTML="Cem:  "+cem
+result2.innerHTML=kod
+result3.innerHTML=kod1
+}
+    </script>
+</body>
+</html>
